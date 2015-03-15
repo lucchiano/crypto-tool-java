@@ -55,12 +55,10 @@ public class CryptoTool {
 					else
 						cmd.execute(argumentTable);
 				} catch (Exception e) {
-					if (e instanceof IndexOutOfBoundsException) {
+					if (e instanceof IndexOutOfBoundsException)
 						System.out.println("ERROR: Illegal argument");
-					}
-					else {
+					else
 						System.out.println(e.getLocalizedMessage());
-					}
 				}
 			}
 		}
